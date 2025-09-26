@@ -2,13 +2,13 @@
 import { useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import useWhatsappRef from "../hooks/useWhatsappRef";
 
 const WhatsappRefButton = () => {
   const [name, setName] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
   const [isModalOpen, setIsModelOpen] = useState(false);
+
+  const { loading, error, data, whatsappRef } = useWhatsappRef();
 
   // WhatsApp ikonunun animasyonu
   useGSAP(() => {
@@ -28,44 +28,9 @@ const WhatsappRefButton = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Form validation
-    if (!name.trim()) {
-      setError("Lütfen isminizi giriniz");
-      return;
-    }
-
-    setLoading(true);
-    setError(null);
-
-    try {
-      const res = await fetch("/api/generate-ref", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name: name.trim() }),
-      });
-
-      const data = await res.json();
-
-      if (res.ok) {
-        console.log(data.token);
-
-        // Başarılı durumda WhatsApp'a yönlendirme yapabilirsiniz
-        const whatsappUrl = `https://wa.me/?text=${data.token}`;
-        window.open(whatsappUrl, "_blank");
-
-        setError(null);
-        setName("");
-        setIsModelOpen(false);
-      } else {
-        setError(data.error || "Bir hata oluştu");
-      }
-    } catch (error) {
-      setError("Bir hata oluştu, lütfen tekrar deneyiniz");
-    } finally {
-      setLoading(false);
-    }
+    await whatsappRef(name);
+    setName("");
+    setIsModelOpen(false);
   };
 
   return (
