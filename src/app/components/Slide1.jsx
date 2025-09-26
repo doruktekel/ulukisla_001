@@ -2,9 +2,14 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
+import { useParams } from "next/navigation";
 
 gsap.registerPlugin(SplitText);
 const Slide1 = () => {
+  const params = useParams();
+
+  console.log("slide 1 icindeki params", params.slug);
+
   useGSAP(() => {
     // .split class'ına sahip elementleri böl
     let split = SplitText.create(".split", { type: "lines" });

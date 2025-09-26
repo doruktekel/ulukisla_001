@@ -5,12 +5,10 @@ import MainSlider from "../components/MainSlider";
 
 const HomePage = () => {
   const params = useParams();
-
-  console.log(params);
+  console.log(params.slug);
 
   return (
     <div>
-      {JSON.stringify(params)}
       <MainSlider />
     </div>
   );
