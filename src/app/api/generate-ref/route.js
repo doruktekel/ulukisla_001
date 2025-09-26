@@ -8,8 +8,6 @@ export const POST = async (req) => {
     return NextResponse.json({ error: "İsim gerekli" }, { status: 400 });
   }
 
-  console.log(name);
-
   try {
     const token = jwt.sign({ name }, process.env.REF_JWT_SECRET);
     return NextResponse.json({ token }, { status: 200 });

@@ -3,12 +3,18 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { useParams } from "next/navigation";
+import { jwtDecode } from "jwt-decode";
 
 gsap.registerPlugin(SplitText);
 const Slide1 = () => {
   const params = useParams();
+  let decodedToken;
 
-  console.log("slide 1 icindeki params", params.slug);
+  if (params) {
+    decodedToken = jwtDecode(params.token[0]);
+  }
+
+  console.log("decode edilmis token", decodedToken);
 
   useGSAP(() => {
     // .split class'ına sahip elementleri böl
@@ -34,6 +40,10 @@ const Slide1 = () => {
             <h1 className="text-5xl font-bold mb-4 header split">
               Modern Architecture
             </h1>
+
+            {decodedToken && (
+              <p className="text-xl content split">{decodedToken}</p>
+            )}
             <p className="text-xl content split">
               Innovative design meets functionality
             </p>
