@@ -10,7 +10,7 @@ const Slide1 = () => {
   const params = useParams();
   let decodedToken;
 
-  console.log("params", params);
+  console.log("params", params.slug);
 
   // if (params) {
   //   decodedToken = jwtDecode(params.token);
