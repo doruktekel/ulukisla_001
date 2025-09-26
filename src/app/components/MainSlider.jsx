@@ -4,6 +4,7 @@ import Slide1 from "./Slide1";
 import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
 import FormSlider from "./FormSlider";
+import WhatsappRefButton from "./WhatsappRefButton";
 
 const MainSlider = () => {
   const slides = [
@@ -81,6 +82,12 @@ const MainSlider = () => {
             {slide.id}
           </button>
         ))}
+      </div>
+
+      {/* Whatsapp Button */}
+
+      <div className="absolute bottom-15 right-5 md:bottom-12 md:right-12">
+        <WhatsappRefButton />
       </div>
     </div>
   );

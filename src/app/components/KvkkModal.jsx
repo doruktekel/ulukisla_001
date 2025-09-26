@@ -27,7 +27,7 @@ const KvkkModal = ({ isOpen, onClose, onAccept }) => {
 
   return (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] flex flex-col">
+      <div className="bg-white rounded-lg max-w-2xl w-full max-h-[60vh] md:max-h-[80vh] flex flex-col">
         <div className="p-4 border-b">
           <h2 className="text-xl font-bold text-center">
             KVKK Aydınlatma Metni
@@ -104,7 +104,7 @@ const KvkkModal = ({ isOpen, onClose, onAccept }) => {
               bilgi için bizimle iletişime geçebilirsiniz.
             </p>
 
-            <div className="h-20"></div>
+            <div className="h-10"></div>
           </div>
         </div>
 
