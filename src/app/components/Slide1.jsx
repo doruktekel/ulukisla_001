@@ -10,9 +10,11 @@ const Slide1 = () => {
   const params = useParams();
   let decodedToken;
 
-  if (params) {
-    decodedToken = jwtDecode(params.token[0]);
-  }
+  console.log("params", params);
+
+  // if (params) {
+  //   decodedToken = jwtDecode(params.token);
+  // }
 
   console.log("decode edilmis token", decodedToken);
 
