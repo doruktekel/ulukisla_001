@@ -3,15 +3,15 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { useParams } from "next/navigation";
-import { jwtDecode } from "jwt-decode";
+import jwtDecode from "jwt-decode";
 
 gsap.registerPlugin(SplitText);
 const Slide1 = () => {
   const params = useParams();
   let decodedToken;
 
-  if (params) {
-    decodedToken = jwtDecode(params.slug?.[0]);
+  if (params?.slug?.[0]) {
+    decodedToken = jwtDecode(params?.slug?.[0]);
   }
 
   console.log("decode edilmis token", decodedToken);
