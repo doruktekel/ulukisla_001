@@ -10,11 +10,21 @@ const Slide1 = () => {
   const params = useParams();
   let decodedToken;
 
-  if (params?.slug?.[0]) {
-    decodedToken = jwtDecode(params?.slug?.[0]);
-  }
+  console.log("params", params);
+  console.log("params.slug", params.slug);
+  console.log("params.slug[0]", params.slug[0]);
 
-  console.log("decode edilmis token", decodedToken);
+  // if (params?.slug[0]) {
+  //   try {
+  //     console.log("params", params);
+  //     console.log("params.slug", params.slug);
+  //     console.log("params.slug[0]", params.slug[0]);
+
+  //     decodedToken = jwtDecode(params.slug[0]);
+  //   } catch (error) {
+  //     console.error("Token decode hatası:", error);
+  //   }
+  // }
 
   useGSAP(() => {
     // .split class'ına sahip elementleri böl
