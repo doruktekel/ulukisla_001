@@ -3,7 +3,7 @@ const Slide2 = () => {
     <div className="w-full h-screen relative">
       <div
         className="w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/5.png')" }}
+        style={{ backgroundImage: "url('/2-1.webp')" }}
       >
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-white text-center">

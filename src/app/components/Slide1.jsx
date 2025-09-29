@@ -37,20 +37,20 @@ const Slide1 = () => {
     <div className="w-full h-screen relative">
       <div
         className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-in-out"
-        style={{ backgroundImage: "url('/3.png')", willChange: "transform" }}
+        style={{ backgroundImage: "url('/1.webp')", willChange: "transform" }}
       >
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-700">
           <div className="text-white text-center">
             <h1 className="text-5xl font-bold mb-4 header split">
-              Modern Architecture
+              ULUKIŞLA ENDÜSTRİ
             </h1>
 
             {decodedToken && (
-              <p className="text-xl content split">{decodedToken.name}</p>
+              <p className="text-xl content split uppercase">
+                {decodedToken.name}
+              </p>
             )}
-            <p className="text-xl content split">
-              Innovative design meets functionality
-            </p>
+            <p className="text-xl content split">ŞEHRİ YAPI KOOPERATİFİ</p>
           </div>
         </div>
       </div>
