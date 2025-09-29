@@ -18,7 +18,7 @@ const Slide1 = () => {
     }
   }
 
-  console.log("decodedToken name", decodedToken.name);
+  console.log("decodedToken name", decodedToken?.name);
 
   useGSAP(() => {
     // .split class'ına sahip elementleri böl
