@@ -46,7 +46,7 @@ const Slide1 = () => {
             </h1>
 
             {decodedToken && (
-              <p className="text-xl content split">{decodedToken}</p>
+              <p className="text-xl content split">{decodedToken.name}</p>
             )}
             <p className="text-xl content split">
               Innovative design meets functionality
