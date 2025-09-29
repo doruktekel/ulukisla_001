@@ -25,8 +25,9 @@ const useWhatsappRef = () => {
 
       if (res.ok) {
         const targetUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${data.token}`;
+        const messageWithUrl = `Sa sayin ${name}, Ulukışla Endüstri Şehri Yapı Kooperatifi'yle iletisim kurmak istiyorum:\n\n\n${targetUrl}`;
         const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
-          targetUrl
+          messageWithUrl
         )}`;
 
         window.open(whatsappUrl, "_blank");

@@ -29,7 +29,7 @@ const Slide1 = () => {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20 translate-0 pt-4 transition-opacity duration-700">
+      <div className="absolute inset-0 bg-black/10 translate-0 pt-4 transition-opacity duration-700">
         <div className="text-white text-center">
           <Image
             src="/favicon.png"
@@ -38,10 +38,10 @@ const Slide1 = () => {
             height={100}
             className="mx-auto mb-4"
           />
-          <h1 className="text-5xl font-bold mb-2 header split">
+          <h1 className="md:text-5xl text-2xl font-bold mb-2 header split">
             ULUKIŞLA ENDÜSTRİ
           </h1>
-          <p className="text-2xl content split font-bold">
+          <p className="md:text-5xl text-2xl mb-2 content split font-bold">
             ŞEHRİ YAPI KOOPERATİFİ
           </p>
         </div>

@@ -6,13 +6,19 @@ import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
 import FormSlider from "./FormSlider";
 import WhatsappRefButton from "./WhatsappRefButton";
+import Slide4 from "./Slide4";
+import Slide5 from "./Slide5";
+import Slide6 from "./Slide6";
 
 const MainSlider = () => {
   const slides = [
     { id: 1, item: Slide1 },
     { id: 2, item: Slide2 },
     { id: 3, item: Slide3 },
-    { id: 4, item: FormSlider },
+    { id: 4, item: Slide4 },
+    { id: 5, item: Slide5 },
+    { id: 6, item: Slide6 },
+    { id: 7, item: FormSlider },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,7 +54,7 @@ const MainSlider = () => {
                   : "opacity-0 transform -translate-x-full"
               }`}
             >
-              <SlideComponent />
+              <SlideComponent isActive={currentSlide === index} />
             </div>
           );
         })}
@@ -57,13 +63,13 @@ const MainSlider = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-4 rounded-full cursor-pointer z-10 transition-all duration-300"
+        className="md:text-2xl hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white/30 text-gray-500 p-4 rounded-full cursor-pointer z-10 transition-all duration-300"
       >
         ←
       </button>
       <button
         onClick={nextSlide}
-        className="hidden md:block absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-4 rounded-full cursor-pointer z-10 transition-all duration-300"
+        className="md:text-2xl hidden md:block absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white/30 text-gray-500 p-4 rounded-full cursor-pointer z-10 transition-all duration-300"
       >
         →
       </button>

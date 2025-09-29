@@ -1,12 +1,12 @@
-const Slide3 = () => {
+const Slide4 = () => {
   return (
     <div className="w-full h-screen relative">
       <div
         className="w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/4.webp')" }}
+        style={{ backgroundImage: "url('/6.webp')" }}
       >
-        <div className="absolute inset-0  flex items-center justify-center">
-          <div className="text-white text-center max-w-6xl mx-auto p-10 bg-black/30">
+        {/* <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+          <div className="text-white text-center max-w-6xl mx-auto p-10">
             <p className="md:text-3xl mb-4">
               Ulukışla Belediyesi öncülüğünde hayata geçirilen Ulukışla Endüstri
               Şehri Yapı Kooperatifi, şehrin geleceğine yön veren en önemli
@@ -25,10 +25,10 @@ const Slide3 = () => {
               ilerliyor.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default Slide3;
+export default Slide4;
