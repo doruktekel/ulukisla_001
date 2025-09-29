@@ -12,6 +12,7 @@ const Slide1 = () => {
 
   console.log("params", params);
   console.log("params.slug", params.slug);
+  console.log("params.slug", params.slug?.[0]);
 
   // if (params?.slug[0]) {
   //   try {
