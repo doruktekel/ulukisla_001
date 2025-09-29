@@ -2,26 +2,12 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
-import { useParams } from "next/navigation";
-import { jwtDecode } from "jwt-decode";
+import Image from "next/image";
 
 gsap.registerPlugin(SplitText);
+
 const Slide1 = () => {
-  const params = useParams();
-  let decodedToken;
-
-  if (params.slug) {
-    try {
-      decodedToken = jwtDecode(params.slug?.[0]);
-    } catch (error) {
-      console.error("Token decode hatası:", error);
-    }
-  }
-
-  console.log("decodedToken name", decodedToken?.name);
-
   useGSAP(() => {
-    // .split class'ına sahip elementleri böl
     let split = SplitText.create(".split", { type: "lines" });
 
     gsap.from(split.lines, {
@@ -30,28 +16,34 @@ const Slide1 = () => {
       autoAlpha: 0,
       stagger: 0.5,
       ease: "power4.out",
+      delay: 2,
     });
   });
 
   return (
-    <div className="w-full h-screen relative">
-      <div
-        className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-in-out"
-        style={{ backgroundImage: "url('/1.webp')", willChange: "transform" }}
-      >
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-700">
-          <div className="text-white text-center">
-            <h1 className="text-5xl font-bold mb-4 header split">
-              ULUKIŞLA ENDÜSTRİ
-            </h1>
+    <div className="w-full h-screen relative overflow-hidden">
+      {/* Video */}
+      <video className="w-full h-full object-cover" autoPlay muted playsInline>
+        <source src="/1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-            {decodedToken && (
-              <p className="text-xl content split uppercase">
-                {decodedToken.name}
-              </p>
-            )}
-            <p className="text-xl content split">ŞEHRİ YAPI KOOPERATİFİ</p>
-          </div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20 translate-0 pt-4 transition-opacity duration-700">
+        <div className="text-white text-center">
+          <Image
+            src="/favicon.png"
+            alt="Logo"
+            width={100}
+            height={100}
+            className="mx-auto mb-4"
+          />
+          <h1 className="text-5xl font-bold mb-2 header split">
+            ULUKIŞLA ENDÜSTRİ
+          </h1>
+          <p className="text-2xl content split font-bold">
+            ŞEHRİ YAPI KOOPERATİFİ
+          </p>
         </div>
       </div>
     </div>
