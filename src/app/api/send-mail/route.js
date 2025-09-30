@@ -43,22 +43,49 @@ export async function POST(req) {
       },
     });
 
-    // Email template
     const mailData = {
       from: process.env.SMTP_USER,
-      to: process.env.RECIPIENT_EMAIL,
+      to: email,
       subject: "Yeni İletişim Formu Başvurusu",
       html: `
-        <h1>Yeni Form Başvurusu</h1>
-        <p><strong>Ad:</strong> ${name}</p>
-        <p><strong>Soyad:</strong> ${surname}</p>
-        <p><strong>Telefon:</strong> ${phone}</p>
-        <p><strong>E-posta:</strong> ${email}</p>
-        <p><strong>Apartman Tipi:</strong> ${apartmentType}</p>
-        <p><strong>Gönderilme Tarihi:</strong> ${new Date().toLocaleString(
-          "tr-TR"
-        )}</p>
-      `,
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eaeaea; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
+      <h1 style="color: #333; text-align: center;">📩 Yeni Form Başvurusu</h1>
+      <p style="color: #555; font-size: 15px; text-align: center;">Aşağıda kullanıcı bilgilerini bulabilirsiniz:</p>
+      
+      <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <tr>
+          <td style="padding: 10px; font-weight: bold; background: #f1f1f1; width: 35%;">Ad</td>
+          <td style="padding: 10px; background: #fff;">${name}</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; font-weight: bold; background: #f1f1f1;">Soyad</td>
+          <td style="padding: 10px; background: #fff;">${surname}</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; font-weight: bold; background: #f1f1f1;">Telefon</td>
+          <td style="padding: 10px; background: #fff;">${phone}</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; font-weight: bold; background: #f1f1f1;">E-posta</td>
+          <td style="padding: 10px; background: #fff;">${email}</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; font-weight: bold; background: #f1f1f1;">Apartman Tipi</td>
+          <td style="padding: 10px; background: #fff;">${apartmentType}</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; font-weight: bold; background: #f1f1f1;">Gönderilme Tarihi</td>
+          <td style="padding: 10px; background: #fff;">${new Date().toLocaleString(
+            "tr-TR"
+          )}</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px; font-size: 14px; color: #777; text-align: center;">
+        Bu mail otomatik olarak gönderilmiştir. Yanıtlamayın.
+      </p>
+    </div>
+  `,
     };
 
     // Send email
