@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export async function POST(req) {
   try {
     // Get form data from request
-    const { name, surname, phone, email } = await req.json();
+    const { name, surname, phone, email, apartmentType } = await req.json();
 
     // Input validation
     const errors = {};
@@ -13,6 +13,7 @@ export async function POST(req) {
     if (!surname) errors.surname = "Soyad alanı zorunludur";
     if (!phone) errors.phone = "Telefon alanı zorunludur";
     if (!email) errors.email = "E-posta alanı zorunludur";
+    if (!apartmentType) errors.apartmentType = "Apartman tipi alanı zorunludur";
 
     // Email format validation
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
@@ -53,6 +54,7 @@ export async function POST(req) {
         <p><strong>Soyad:</strong> ${surname}</p>
         <p><strong>Telefon:</strong> ${phone}</p>
         <p><strong>E-posta:</strong> ${email}</p>
+        <p><strong>Apartman Tipi:</strong> ${apartmentType}</p>
         <p><strong>Gönderilme Tarihi:</strong> ${new Date().toLocaleString(
           "tr-TR"
         )}</p>

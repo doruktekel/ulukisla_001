@@ -10,6 +10,7 @@ const ContactForm = () => {
     surname: "",
     phone: "",
     email: "",
+    apartmentType: "",
     acceptKvkk: false,
   });
   const [errors, setErrors] = useState({});
@@ -39,6 +40,10 @@ const ContactForm = () => {
       !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
     ) {
       newErrors.email = "Geçerli bir e-posta adresi giriniz";
+    }
+
+    if (!formData.apartmentType) {
+      newErrors.apartmentType = "Daire tipi seçimi zorunludur";
     }
 
     if (!formData.acceptKvkk) {
@@ -78,6 +83,7 @@ const ContactForm = () => {
           surname: "",
           phone: "",
           email: "",
+          apartmentType: "",
           acceptKvkk: false,
         });
       } else {
@@ -190,6 +196,33 @@ const ContactForm = () => {
           />
           {errors.email && (
             <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+          )}
+        </div>
+
+        <div>
+          <select
+            name="apartmentType"
+            value={formData.apartmentType}
+            onChange={handleChange}
+            className={`w-full p-3 rounded-lg bg-white/20 border ${
+              errors.apartmentType ? "border-red-500" : "border-transparent"
+            } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
+          >
+            <option value="" className="text-gray-900">
+              Daire Tipi Seçiniz
+            </option>
+            <option value="2+1" className="text-gray-900">
+              2+1
+            </option>
+            <option value="3+1" className="text-gray-900">
+              3+1
+            </option>
+            <option value="4+1" className="text-gray-900">
+              4+1
+            </option>
+          </select>
+          {errors.apartmentType && (
+            <p className="text-red-400 text-sm mt-1">{errors.apartmentType}</p>
           )}
         </div>
 
