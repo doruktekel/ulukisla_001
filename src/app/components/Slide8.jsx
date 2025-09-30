@@ -6,7 +6,7 @@ import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
-const Slide6 = ({ isActive }) => {
+const Slide8 = ({ isActive }) => {
   useGSAP(() => {
     if (!isActive) return;
     const tl = gsap.timeline({ delay: 0.5 });
@@ -39,28 +39,24 @@ const Slide6 = ({ isActive }) => {
     <div className="w-full h-screen relative">
       <div
         className="w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/18.webp')" }}
+        style={{ backgroundImage: "url('/24.webp')" }}
       >
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
           <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
             <h1 className="md:text-2xl mb-2 font-bold content1">
-              2- Sağlıklı Yaşam, Sosyal Hayat
+              4-Güvenli Gelecek, Sağlıklı Yaşam
             </h1>
             <p className="md:text-lg content2">
-              Ulukışla Endüstri Şehri Yapı Kooperatifi, sakinlerine yalnızca
-              modern konutlar değil, aynı zamanda sağlıklı ve hareketli bir
-              yaşamın kapılarını açıyor. Proje içerisinde basketbol, futbol ve
-              tenis sahalarıyla her yaştan bireyin aktif kalabileceği geniş spor
-              olanakları sunuluyor. Kapalı yüzme havuzu, dört mevsim spor yapma
-              fırsatı sağlarken, yürüyüş parkurları ve bisiklet yolları da
-              doğayla iç içe keyifli zaman geçirme imkânı yaratıyor. Açık hava
-              spor alanlarının yanı sıra planlanan fitness bölümleri ve çok
-              amaçlı sahalar, spor alışkanlığını günlük yaşamın bir parçası
-              haline getiriyor. Bu imkanlar, yalnızca bireysel spor için değil,
-              aynı zamanda topluluk ruhunu güçlendiren etkinliklere de zemin
-              hazırlıyor. Tesisin sunduğu zengin sosyal ve sportif imkanlarla
-              hem yetişkinlere hem de çocuklara sağlıklı, dinamik ve keyifli bir
-              yaşam sunuyor.
+              Yaşamın en temel ihtiyaçlarını merkeze alan bu proje, sağlık
+              hizmetleriyle fark yaratıyor. Modern altyapıya sahip hastane ve
+              sağlık merkezleri, yalnızca acil durumlara değil; düzenli sağlık
+              kontrollerine ve sürekli bakım ihtiyaçlarına da cevap verecek
+              şekilde planlandı. Sakinler, kapsamlı sağlık hizmetlerine
+              evlerinden yalnızca birkaç adım uzaklıkta ulaşmanın ayrıcalığını
+              yaşayacak. Böylece günlük yaşam, güven ve huzur içinde sürerken;
+              geleceğe dair kaygılar da en aza indirilecek. Bu yaklaşım, projeyi
+              sadece bir konut topluluğu olmaktan çıkararak, ailelere uzun
+              vadeli bir yaşam güvencesi sunuyor.
             </p>
           </div>
         </div>
@@ -69,4 +65,4 @@ const Slide6 = ({ isActive }) => {
   );
 };
 
-export default Slide6;
+export default Slide8;

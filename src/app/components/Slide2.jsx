@@ -53,19 +53,19 @@ const Slide2 = ({ isActive }) => {
         style={{ backgroundImage: "url('/3.webp')" }}
       >
         <div className="absolute  inset-0 bg-black/20 flex items-start justify-center">
-          <div className="text-white max-w-6xl mx-auto p-10">
+          <div className="text-white max-w-6xl mx-auto p-10 text-justify">
             {decodedToken && (
-              <h1 className="text-xl content split uppercase">
+              <h1 className="md:text-2xl content split uppercase bg-black/30 p-5">
                 Sayın {decodedToken.name};
               </h1>
             )}
-            <p className="md:text-3xl mb-4 content1">
+            <p className="md:text-3xl mb-2 content1 bg-black/30 p-5 ">
               Sizleri, Niğde Ulukışla’da hayata geçireceğimiz Ulukışla Endüstri
               Şehri Yapı Kooperatifi’ne üye olmaya davet ediyoruz.
               Kooperatifimiz, GIA Özel Endüstri Bölgesi’nin hemen yanında,
               modern yaşam ve konforun buluştuğu bir alan üzerinde kurulacaktır.
             </p>
-            <p className="md:text-3xl content2">
+            <p className="md:text-3xl content2 bg-black/30 p-5 ">
               Projemiz yaklaşık 10.000 konut ile planlanmış olup; güvenli, lüks
               ve konforlu dairelerin yanı sıra kendi içerisinde sosyal tesisler,
               özel alanlar ve çeşitli yaşam kolaylıkları sunacaktır. Bu eşsiz

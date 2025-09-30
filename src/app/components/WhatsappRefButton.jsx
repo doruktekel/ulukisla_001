@@ -74,10 +74,10 @@ const WhatsappRefButton = () => {
 
             <div className="mb-6">
               <h2 className="text-2xl font-semibold text-gray-800 text-center">
-                İsminizi Yazın
+                WhatsApp'tan Paylaş
               </h2>
               <p className="text-gray-600 text-center mt-2">
-                Whatsapp üzerinden size ulaşabilmemiz için isminizi yazınız
+                Paylaşılan Kişinin Adı
               </p>
             </div>
 
@@ -85,7 +85,7 @@ const WhatsappRefButton = () => {
               <div>
                 <input
                   type="text"
-                  placeholder="Adınız Soyadınız"
+                  placeholder="Ad Soyad"
                   className={`w-full px-4 py-3 rounded-lg border ${
                     error ? "border-red-500" : "border-gray-300"
                   } focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all text-gray-700`}

@@ -4,11 +4,17 @@ import { useState } from "react";
 import Slide1 from "./Slide1";
 import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
-import FormSlider from "./FormSlider";
-import WhatsappRefButton from "./WhatsappRefButton";
 import Slide4 from "./Slide4";
 import Slide5 from "./Slide5";
 import Slide6 from "./Slide6";
+import Slide7 from "./Slide7";
+import Slide8 from "./Slide8";
+import Slide9 from "./Slide9";
+import FormSlider from "./FormSlider";
+import WhatsappRefButton from "./WhatsappRefButton";
+import Slide11 from "./Slide11";
+import Slide10 from "./Slide10";
+import Image from "next/image";
 
 const MainSlider = () => {
   const slides = [
@@ -18,7 +24,12 @@ const MainSlider = () => {
     { id: 4, item: Slide4 },
     { id: 5, item: Slide5 },
     { id: 6, item: Slide6 },
-    { id: 7, item: FormSlider },
+    { id: 7, item: Slide7 },
+    { id: 8, item: Slide8 },
+    { id: 9, item: Slide9 },
+    { id: 10, item: Slide10 },
+    { id: 11, item: Slide11 },
+    { id: 12, item: FormSlider },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -75,7 +86,7 @@ const MainSlider = () => {
       </button>
 
       {/* Pagination */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-wrap gap-2 bg-black/20 p-2 md:rounded-full w-80 md:w-fit justify-center rounded-xl">
         {slides.map((slide, index) => (
           <button
             key={index}
@@ -91,9 +102,23 @@ const MainSlider = () => {
         ))}
       </div>
 
+      {/* Sirket Logosu */}
+
+      <div className="absolute md:block hidden md:bottom-12 md:top-auto md:left-9">
+        {currentSlide !== 0 && (
+          <Image
+            src="/favicon.png"
+            alt="Logo"
+            width={100}
+            height={100}
+            className="mx-auto mb-4"
+          />
+        )}
+      </div>
+
       {/* Whatsapp Button */}
 
-      <div className="absolute bottom-15 right-5 md:bottom-12 md:right-12">
+      <div className="absolute bottom-20 right-5 md:bottom-12 md:right-12">
         <WhatsappRefButton />
       </div>
     </div>

@@ -12,7 +12,9 @@ const Slide5 = ({ isActive }) => {
     const tl = gsap.timeline({ delay: 0.5 });
 
     let split1 = SplitText.create(".content1", { type: "words, lines" });
-    let split2 = SplitText.create(".content2", { type: "words, lines" });
+    let split2 = SplitText.create(".content2", {
+      type: "words , lines ",
+    });
 
     // Timeline ile sırayla
     tl.from(split1.lines, {
@@ -21,7 +23,7 @@ const Slide5 = ({ isActive }) => {
       autoAlpha: 0,
       ease: "power4.out",
     }).from(
-      split2.lines,
+      split2.words,
       {
         // Birinciden hemen sonra başlar
         duration: 1,
@@ -39,13 +41,13 @@ const Slide5 = ({ isActive }) => {
         className="w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/17.webp')" }}
       >
-        <div className="absolute inset-0  flex items-start justify-center">
-          <div className="text-white bg-black/30 max-w-7xl mx-auto mt-10 p-10 text-center">
-            <h1 className="md:text-4xl mb-4 font-bold content1">
+        <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
+          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
+            <h1 className="md:text-2xl mb-2 font-bold content1">
               1-Ulukışla’nın Yükselen Değeri : Ulukışla Endüstri Şehri Yapı
               Kooperatifi
             </h1>
-            <p className="md:text-2xl content2">
+            <p className="md:text-lg content2">
               Ulukışla Endüstri Şehri Yapı Kooperatifi, yalnızca bir toplu konut
               projesi değil; şehrin modern yüzünü temsil eden yeni bir yaşam
               merkezi olarak tasarlandı. 2+1 ve 3+1 daire seçenekleriyle hem
