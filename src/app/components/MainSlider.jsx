@@ -15,6 +15,8 @@ import WhatsappRefButton from "./WhatsappRefButton";
 import Slide11 from "./Slide11";
 import Slide10 from "./Slide10";
 import Image from "next/image";
+import Slide12 from "./Slide12";
+import Slide13 from "./Slide13";
 
 const MainSlider = () => {
   const slides = [
@@ -30,6 +32,8 @@ const MainSlider = () => {
     { id: 10, item: Slide10 },
     { id: 11, item: Slide11 },
     { id: 12, item: FormSlider },
+    { id: 13, item: Slide12 },
+    { id: 14, item: Slide13 },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
