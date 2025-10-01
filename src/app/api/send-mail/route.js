@@ -32,16 +32,39 @@ export async function POST(req) {
       return NextResponse.json({ errors }, { status: 400 });
     }
 
+    console.log("SMTP Config:", {
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
+      user: process.env.SMTP_USER,
+      hasPassword: !!process.env.SMTP_PASS,
+    });
+
+    const smtpPort = parseInt(process.env.SMTP_PORT || "465");
+
     // Configure email transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
-      secure: true, // true for 465, false for other ports
+      port: smtpPort,
+      secure: smtpPort === 465, //  true, // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+      // Timeout ayarları - Vercel için önemli
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
     });
+
+    // SMTP bağlantısını test et
+    console.log("SMTP bağlantısı test ediliyor...");
+    try {
+      await transporter.verify();
+      console.log("✅ SMTP bağlantısı başarılı");
+    } catch (verifyError) {
+      console.error("❌ SMTP verify hatası:", verifyError.message);
+      throw new Error(`SMTP bağlantı hatası: ${verifyError.message}`);
+    }
 
     const mailData = {
       from: process.env.SMTP_USER,
