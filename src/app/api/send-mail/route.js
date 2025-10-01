@@ -36,19 +36,16 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: false, // true for 465, false for other ports
+      secure: true, // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
-      },
-      tls: {
-        rejectUnauthorized: false, // hosting sertifikası self-signed ise gerekebilir
       },
     });
 
     const mailData = {
       from: process.env.SMTP_USER,
-      to: email,
+      to: process.env.SMTP_USER,
       subject: "Yeni İletişim Formu Başvurusu",
       html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eaeaea; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
