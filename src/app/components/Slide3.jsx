@@ -7,7 +7,7 @@ const Slide3 = () => {
       >
         <div className="absolute inset-0  flex items-center justify-center">
           <div className="text-white text-justify max-w-6xl mx-auto p-5 bg-black/30">
-            <p className="md:text-3xl mb-4">
+            <p className="md:text-xl mb-4">
               Ulukışla Belediyesi öncülüğünde hayata geçirilen Ulukışla Endüstri
               Şehri Yapı Kooperatifi, şehrin geleceğine yön veren en önemli
               yatırımlardan biri olarak öne çıkıyor. 10.000 konutluk dev
@@ -15,7 +15,7 @@ const Slide3 = () => {
               proje, gelecek nesiller için de güvenli, modern ve sürdürülebilir
               bir yaşam alanı sunmayı hedefliyor.
             </p>
-            <p className="md:text-3xl">
+            <p className="md:text-xl">
               Planlı yapısı, çağdaş mimarisi ve geniş sosyal donatılarıyla
               sakinlerine konforlu bir hayatın kapılarını açarken; okul, kreş,
               hastane, spor tesisleri, kapalı havuz ve yürüyüş alanları gibi
