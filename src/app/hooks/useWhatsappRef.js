@@ -25,7 +25,7 @@ const useWhatsappRef = () => {
 
       if (res.ok) {
         const targetUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${data.token}`;
-        const messageWithUrl = `Sayın ${name}, merhabalar sizlere Ulukışla Endüstri Şehri Yapı Kooperatifi'nin fırsatlarla dolu portföyünü iletmekten mutluluk duyarım.\n\n\n${targetUrl}`;
+        const messageWithUrl = `Sayın ${name}, merhabalar sizlere Ulukışla Anadolu Yapı Kooperatifi'nin fırsatlarla dolu portföyünü iletmekten mutluluk duyarım.\n\n\n${targetUrl}`;
         const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
           messageWithUrl
         )}`;

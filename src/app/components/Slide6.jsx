@@ -47,10 +47,10 @@ const Slide6 = ({ isActive }) => {
               2- Sağlıklı Yaşam, Sosyal Hayat
             </h1>
             <p className="md:text-lg content2">
-              Ulukışla Endüstri Şehri Yapı Kooperatifi, sakinlerine yalnızca
-              modern konutlar değil, aynı zamanda sağlıklı ve hareketli bir
-              yaşamın kapılarını açıyor. Proje içerisinde basketbol, futbol ve
-              tenis sahalarıyla her yaştan bireyin aktif kalabileceği geniş spor
+              Ulukışla Anadolu Yapı Kooperatifi, sakinlerine yalnızca modern
+              konutlar değil, aynı zamanda sağlıklı ve hareketli bir yaşamın
+              kapılarını açıyor. Proje içerisinde basketbol, futbol ve tenis
+              sahalarıyla her yaştan bireyin aktif kalabileceği geniş spor
               olanakları sunuluyor. Kapalı yüzme havuzu, dört mevsim spor yapma
               fırsatı sağlarken, yürüyüş parkurları ve bisiklet yolları da
               doğayla iç içe keyifli zaman geçirme imkânı yaratıyor. Açık hava

@@ -60,19 +60,19 @@ const Slide2 = ({ isActive }) => {
               </h1>
             )}
             <p className="md:text-xl mb-2 content1 bg-black/30 p-5 ">
-              Sizleri, Niğde Ulukışla’da hayata geçireceğimiz Ulukışla Endüstri
-              Şehri Yapı Kooperatifi’ne üye olmaya davet ediyoruz.
-              Kooperatifimiz, GIA Özel Endüstri Bölgesi’nin hemen yanında,
-              modern yaşam ve konforun buluştuğu bir alan üzerinde kurulacaktır.
+              Sizleri, Niğde Ulukışla’da hayata geçireceğimiz Ulukışla Anadolu
+              Yapı Kooperatifi’ne üye olmaya davet ediyoruz. Kooperatifimiz, GIA
+              Özel Endüstri Bölgesi’nin hemen yanında, modern yaşam ve konforun
+              buluştuğu bir alan üzerinde kurulacaktır.
             </p>
             <p className="md:text-xl content2 bg-black/30 p-5 ">
               Projemiz yaklaşık 10.000 konut ile planlanmış olup; güvenli, lüks
               ve konforlu dairelerin yanı sıra kendi içerisinde sosyal tesisler,
               özel alanlar ve çeşitli yaşam kolaylıkları sunacaktır. Bu eşsiz
               proje, hem yatırım hem de yaşam alanı olarak size benzersiz
-              fırsatlar sunmaktadır. Siz de Ulukışla Endüstri Şehri’nin bir
-              parçası olarak, geleceğin modern yaşam alanını birlikte
-              şekillendirebiliriz.
+              fırsatlar sunmaktadır. Siz de Ulukışla Anadolu Yapı
+              Kooperatifi’nin bir parçası olarak, geleceğin modern yaşam alanını
+              birlikte şekillendirebiliriz.
             </p>
           </div>
         </div>

@@ -39,10 +39,10 @@ const Slide1 = () => {
             className="mx-auto mb-4"
           />
           <h1 className="md:text-5xl text-2xl font-bold mb-2 header split">
-            ULUKIŞLA ENDÜSTRİ
+            ULUKIŞLA ANADOLU
           </h1>
           <p className="md:text-5xl text-2xl mb-2 content split font-bold">
-            ŞEHRİ YAPI KOOPERATİFİ
+            YAPI KOOPERATİFİ
           </p>
         </div>
       </div>

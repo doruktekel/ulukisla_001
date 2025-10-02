@@ -44,11 +44,10 @@ const Slide5 = ({ isActive }) => {
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
           <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
             <h1 className="md:text-2xl mb-2 font-bold content1">
-              1-Ulukışla’nın Yükselen Değeri : Ulukışla Endüstri Şehri Yapı
-              Kooperatifi
+              1-Ulukışla’nın Yükselen Değeri : Ulukışla Anadolu Yapı Kooperatifi
             </h1>
             <p className="md:text-lg content2">
-              Ulukışla Endüstri Şehri Yapı Kooperatifi, yalnızca bir toplu konut
+              Ulukışla Anadolu Yapı Kooperatifi, yalnızca bir toplu konut
               projesi değil; şehrin modern yüzünü temsil eden yeni bir yaşam
               merkezi olarak tasarlandı. 2+1 ve 3+1 daire seçenekleriyle hem
               ailelere hem de bireylere uygun çözümler sunan proje, her ihtiyaca

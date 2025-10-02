@@ -44,7 +44,7 @@ const Slide12 = ({ isActive }) => {
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
           <div className="text-white text-center md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
             <h1 className="md:text-2xl mb-2 font-bold content1">
-              ULUKIŞLA ENDÜSTRİ ŞEHRİ YAPI KOOPERATİFİ
+              ULUKIŞLA ANADOLU YAPI KOOPERATİFİ
             </h1>
             <p className="md:text-lg content2">
               ADRES : CEPA OFİS KULE Mustafa Kemal Mahallesi Eskişehir Yolu 7.
