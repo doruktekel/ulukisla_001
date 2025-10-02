@@ -39,7 +39,7 @@ const Slide11 = ({ isActive }) => {
   return (
     <div className="w-full h-screen bg-white">
       <Image
-        src="/2+1.webp"
+        src="/3+1.webp"
         alt="Logo"
         width={1400}
         height={1000}
