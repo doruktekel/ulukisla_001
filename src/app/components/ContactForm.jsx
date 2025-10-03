@@ -227,6 +227,15 @@ const ContactForm = () => {
         </div>
 
         <div className="flex items-start space-x-2">
+          <label className="text-sm text-white select-none font-semibold underline underline-offset-4transition-colors duration-300 ease-in-out">
+            <span className="text-red-500">*</span> Müracaat eden ortak
+            sayısının planlanan konut sayısını aşması halinde; ön talebe dahil
+            olan ortakların kesin ortaklıkları noter huzurunda yapılacak kura
+            sonucuyla belirlenecektir.
+          </label>
+        </div>
+
+        <div className="flex items-start space-x-2">
           <input
             type="checkbox"
             name="acceptKvkk"
