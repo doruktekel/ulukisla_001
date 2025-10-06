@@ -42,11 +42,11 @@ const Slide6 = ({ isActive }) => {
         style={{ backgroundImage: "url('/18.webp')" }}
       >
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
-          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
-            <h1 className="md:text-2xl mb-2 font-bold content1">
+          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
+            <h1 className="md:text-2xl text-lg mb-2 font-bold content1">
               2- Sağlıklı Yaşam, Sosyal Hayat
             </h1>
-            <p className="md:text-lg content2">
+            <p className="md:text-lg text-sm content2">
               Ulukışla Anadolu Yapı Kooperatifi, sakinlerine yalnızca modern
               konutlar değil, aynı zamanda sağlıklı ve hareketli bir yaşamın
               kapılarını açıyor. Proje içerisinde basketbol, futbol ve tenis

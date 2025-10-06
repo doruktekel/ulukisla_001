@@ -129,8 +129,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-xl">
-      <h2 className="text-3xl font-bold text-white mb-6 text-center">
+    <div className="w-full max-w-md p-1 md:p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-xl">
+      <h2 className="md:text-3xl text-xl font-bold text-white mb-6 text-center">
         İletişim Formu
       </h2>
 
@@ -142,7 +142,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Adınız"
-            className={`w-full p-3 rounded-lg bg-white/20 border ${
+            className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.name ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
           />
@@ -158,7 +158,7 @@ const ContactForm = () => {
             value={formData.surname}
             onChange={handleChange}
             placeholder="Soyadınız"
-            className={`w-full p-3 rounded-lg bg-white/20 border ${
+            className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.surname ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
           />
@@ -174,7 +174,7 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Telefon Numaranız"
-            className={`w-full p-3 rounded-lg bg-white/20 border ${
+            className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.phone ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
           />
@@ -190,7 +190,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="E-posta Adresiniz"
-            className={`w-full p-3 rounded-lg bg-white/20 border ${
+            className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.email ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
           />
@@ -204,7 +204,7 @@ const ContactForm = () => {
             name="apartmentType"
             value={formData.apartmentType}
             onChange={handleChange}
-            className={`w-full p-3 rounded-lg bg-white/20 border ${
+            className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.apartmentType ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
           >
@@ -227,7 +227,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex items-start space-x-2">
-          <label className="text-sm text-white select-none font-semibold underline underline-offset-4transition-colors duration-300 ease-in-out">
+          <label className="md:text-sm text-xs text-white select-none font-semibold underline underline-offset-4transition-colors duration-300 ease-in-out">
             <span className="text-red-500">*</span> Müracaat eden ortak
             sayısının planlanan konut sayısını aşması halinde; ön talebe dahil
             olan ortakların kesin ortaklıkları noter huzurunda yapılacak kura
@@ -245,7 +245,7 @@ const ContactForm = () => {
             id="acceptKvkk"
           />
           <label
-            className="text-sm text-white select-none cursor-pointer font-semibold underline underline-offset-4 hover:text-blue-300 transition-colors duration-300 ease-in-out"
+            className="md:text-sm text-xs text-white select-none cursor-pointer font-semibold underline underline-offset-4 hover:text-blue-300 transition-colors duration-300 ease-in-out"
             htmlFor="acceptKvkk"
             onClick={(e) => {
               e.preventDefault();
@@ -272,7 +272,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full p-3 rounded-lg cursor-pointer hover:bg-gray-300 bg-white text-black font-semibold transition-all duration-300 ease-in-out
+          className={`w-full md:p-3 p-2 rounded-lg cursor-pointer hover:bg-gray-300 bg-white text-black font-semibold transition-all duration-300 ease-in-out
             ${
               isSubmitting
                 ? "opacity-50 cursor-not-allowed"

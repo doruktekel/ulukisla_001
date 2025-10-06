@@ -37,7 +37,7 @@ const Slide11 = ({ isActive }) => {
   }, [isActive]);
 
   return (
-    <div className="w-full h-screen bg-white">
+    <div className="w-full h-screen flex-col items-center justify-center bg-white">
       <Image
         src="/3+1.webp"
         alt="Logo"

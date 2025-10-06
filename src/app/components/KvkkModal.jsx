@@ -27,9 +27,9 @@ const KvkkModal = ({ isOpen, onClose, onAccept }) => {
 
   return (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg max-w-2xl w-full max-h-[60vh] md:max-h-[80vh] flex flex-col">
+      <div className="bg-white p-1 rounded-lg max-w-2xl w-full max-h-[60vh] md:max-h-[80vh] flex flex-col">
         <div className="p-4 border-b">
-          <h2 className="text-xl font-bold text-center">
+          <h2 className="text-xl font-bold text-center p-1">
             KVKK Aydınlatma Metni
           </h2>
         </div>

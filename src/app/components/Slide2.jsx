@@ -59,7 +59,7 @@ const Slide2 = ({ isActive }) => {
                 Sayın {decodedToken.name};
               </h1>
             )}
-            <p className="md:text-xl text-sm mb-2 content1 bg-black/30 md:p-5 p-1 ">
+            <p className="md:text-xl text-sm md:p-5 p-1 mb-2 content1 bg-black/30  ">
               Sizleri, Niğde Ulukışla’da hayata geçireceğimiz Ulukışla Anadolu
               Yapı Kooperatifi’ne üye olmaya davet ediyoruz. Kooperatifimiz, GIA
               Özel Endüstri Bölgesi’nin hemen yanında, modern yaşam ve konforun

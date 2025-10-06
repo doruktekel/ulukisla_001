@@ -42,11 +42,11 @@ const Slide8 = ({ isActive }) => {
         style={{ backgroundImage: "url('/8.webp')" }}
       >
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
-          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
-            <h1 className="md:text-2xl mb-2 font-bold content1">
+          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
+            <h1 className="md:text-2xl text-lg mb-2 font-bold content1">
               5-Geleceğe Değer Katan Yatırım
             </h1>
-            <p className="md:text-lg content2">
+            <p className="md:text-lg text-sm content2">
               Bu proje, yalnızca modern bir yaşam alanı değil aynı zamanda güçlü
               bir yatırım fırsatıdır. Bölgenin endüstri merkezine olan yakınlığı
               sayesinde, iş ve yaşam dengesini en verimli şekilde kurma imkânı

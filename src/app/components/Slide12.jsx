@@ -42,15 +42,15 @@ const Slide12 = ({ isActive }) => {
         style={{ backgroundImage: "url('/13.webp')" }}
       >
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
-          <div className="text-white text-center md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
-            <h1 className="md:text-2xl mb-2 font-bold content1">
+          <div className="text-white text-center md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
+            <h1 className="md:text-2xl text-lg mb-2 font-bold content1">
               ULUKIŞLA ANADOLU YAPI KOOPERATİFİ
             </h1>
-            <p className="md:text-lg content2">
+            <p className="md:text-lg text-sm content2">
               ADRES : CEPA OFİS KULE Mustafa Kemal Mahallesi Eskişehir Yolu 7.
               km 2123 Sokak No:2/D, Kat 11, No:1103 ÇANKAYA / ANKARA
             </p>
-            <p className="md:text-lg content2">
+            <p className="md:text-lg text-sm content2">
               İLETİŞİM: T: +90 312 473 56 50 M: info@belenandpartners.com
             </p>
           </div>

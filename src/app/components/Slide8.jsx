@@ -42,11 +42,11 @@ const Slide8 = ({ isActive }) => {
         style={{ backgroundImage: "url('/24.webp')" }}
       >
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
-          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-2 md:p-5 ">
-            <h1 className="md:text-2xl mb-2 font-bold content1">
+          <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
+            <h1 className="md:text-2xl text-lg mb-2 font-bold content1">
               4-Güvenli Gelecek, Sağlıklı Yaşam
             </h1>
-            <p className="md:text-lg content2">
+            <p className="md:text-lg text-sm content2">
               Yaşamın en temel ihtiyaçlarını merkeze alan bu proje, sağlık
               hizmetleriyle fark yaratıyor. Modern altyapıya sahip hastane ve
               sağlık merkezleri, yalnızca acil durumlara değil; düzenli sağlık
