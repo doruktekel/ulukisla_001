@@ -55,7 +55,7 @@ const Slide2 = ({ isActive }) => {
         <div className="absolute  inset-0 bg-black/20 flex items-start justify-center">
           <div className="text-white max-w-6xl mx-auto p-10 text-justify">
             {decodedToken && (
-              <h1 className="md:text-2xl content split uppercase bg-black/30 p-5">
+              <h1 className="md:text-xl text-sm content split uppercase bg-black/30 md:p-4 p-2">
                 Sayın {decodedToken.name};
               </h1>
             )}

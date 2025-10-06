@@ -129,7 +129,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md p-1 md:p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-xl">
+    <div className="w-full max-w-md p-2 md:p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-xl">
       <h2 className="md:text-3xl text-xl font-bold text-white mb-6 text-center">
         İletişim Formu
       </h2>
@@ -208,8 +208,11 @@ const ContactForm = () => {
               errors.apartmentType ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
           >
-            <option value="" className="text-gray-900">
+            <option value="" className="text-gray-300">
               Daire Tipi Seçiniz
+            </option>
+            <option value="1+1" className="text-gray-900">
+              1+1
             </option>
             <option value="2+1" className="text-gray-900">
               2+1

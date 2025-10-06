@@ -41,7 +41,7 @@ const Slide5 = ({ isActive }) => {
         className="w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/17.webp')" }}
       >
-        <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
+        <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-center md:items-end justify-center">
           <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
             <h1 className="text-lg md:text-2xl mb-2 font-bold content1">
               1-Ulukışla’nın Yükselen Değeri : Ulukışla Anadolu Yapı Kooperatifi
@@ -49,14 +49,14 @@ const Slide5 = ({ isActive }) => {
             <p className=" text-sm md:text-lg content2">
               Ulukışla Anadolu Yapı Kooperatifi, yalnızca bir toplu konut
               projesi değil; şehrin modern yüzünü temsil eden yeni bir yaşam
-              merkezi olarak tasarlandı. 2+1 ve 3+1 daire seçenekleriyle hem
-              ailelere hem de bireylere uygun çözümler sunan proje, her ihtiyaca
-              cevap verebilecek çeşitlilikte bir yaşam alanı oluşturuyor. Çağdaş
-              mimarisi ve planlı yerleşim düzeni sayesinde sakinlerine ferah,
-              düzenli ve güvenli bir çevre sağlıyor. Konutların iç
-              tasarımlarında fonksiyonellik ve konfor bir arada düşünülerek,
-              modern yaşamın tüm beklentilerine yanıt veriyor. Geniş
-              balkonlardan doğal ışık alan salonlara kadar her ayrıntı,
+              merkezi olarak tasarlandı.1+1, 2+1, 3+1 ve 4+1 daire
+              seçenekleriyle hem ailelere hem de bireylere uygun çözümler sunan
+              proje, her ihtiyaca cevap verebilecek çeşitlilikte bir yaşam alanı
+              oluşturuyor. Çağdaş mimarisi ve planlı yerleşim düzeni sayesinde
+              sakinlerine ferah, düzenli ve güvenli bir çevre sağlıyor.
+              Konutların iç tasarımlarında fonksiyonellik ve konfor bir arada
+              düşünülerek, modern yaşamın tüm beklentilerine yanıt veriyor.
+              Geniş balkonlardan doğal ışık alan salonlara kadar her ayrıntı,
               sakinlerine keyifli bir yaşam deneyimi sunuyor. Ulukışla
               Belediyesi’nin öncülüğünde hayata geçirilen bu vizyoner proje,
               bölgenin değerini artırırken, sakinlerine de uzun yıllar güven ve

@@ -41,7 +41,7 @@ const Slide8 = ({ isActive }) => {
         className="w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/24.webp')" }}
       >
-        <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
+        <div className="absolute inset-0 bottom-32 md:bottom-16 flex md:items-end items-center  justify-center">
           <div className="text-white md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
             <h1 className="md:text-2xl text-lg mb-2 font-bold content1">
               4-Güvenli Gelecek, Sağlıklı Yaşam

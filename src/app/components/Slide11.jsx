@@ -26,18 +26,17 @@ const Slide11 = ({ isActive }) => {
     }).from(
       split2.words,
       {
-        // Birinciden hemen sonra başlar
         duration: 1,
         y: 100,
         autoAlpha: 0,
         ease: "power4.out",
       },
       "+=0.2"
-    ); // 0.2 saniye bekle sonra başla
+    );
   }, [isActive]);
 
   return (
-    <div className="w-full h-screen flex-col items-center justify-center bg-white">
+    <div className="relative w-full min-h-screen flex flex-col md:flex-row items-center justify-center bg-white">
       <Image
         src="/3+1.webp"
         alt="Logo"
