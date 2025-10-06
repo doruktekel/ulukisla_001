@@ -40,8 +40,8 @@ const Slide1 = () => {
           <Image
             src="/logo_b.webp"
             alt="Logo"
-            width={200}
-            height={200}
+            width={1000}
+            height={1000}
             className="mx-auto mb-4 w-[250px] md:w-[500px] "
           />
           {/* <h1 className="md:text-5xl text-2xl font-bold mb-2 header split">
