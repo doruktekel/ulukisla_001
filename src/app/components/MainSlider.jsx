@@ -159,10 +159,10 @@ const MainSlider = () => {
       <div className="absolute md:block hidden md:bottom-12 md:top-auto md:left-9">
         {currentSlide !== 0 && (
           <Image
-            src="/favicon.png"
+            src="/logo_b.webp"
             alt="Logo"
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             className="mx-auto mb-4"
           />
         )}

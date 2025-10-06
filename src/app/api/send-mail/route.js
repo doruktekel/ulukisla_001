@@ -170,7 +170,7 @@ Kişisel verileriniz, tamamen kendi iradenizle ve açık rızanızla tarafımız
           </tr>
           <tr>
             <td style='padding:10px 28px 0 28px;'>
-              <img src='https://ulukisla-001.vercel.app/logo.webp' alt='UlukışlaLogo' width='140' style='display:block;margin:0 auto' />
+              <img src='https://ulukisla-001.vercel.app/logo_k.webp' alt='UlukışlaLogo' width='140' style='display:block;margin:0 auto' />
             </td>
           </tr>
           <tr>

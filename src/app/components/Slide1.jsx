@@ -39,10 +39,10 @@ const Slide1 = () => {
       <div className="absolute inset-0 bg-black/10 translate-0 pt-4 transition-opacity duration-700">
         <div className="text-white text-center">
           <Image
-            src="/favicon.png"
+            src="/logo_b.webp"
             alt="Logo"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
             className="mx-auto mb-4"
           />
           <h1 className="md:text-5xl text-2xl font-bold mb-2 header split">
