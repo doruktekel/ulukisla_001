@@ -6,7 +6,7 @@ const Slide3 = () => {
         style={{ backgroundImage: "url('/4.webp')" }}
       >
         <div className="absolute inset-0  flex items-center justify-center">
-          <div className="text-white text-justify max-w-6xl mx-auto p-5 bg-black/30">
+          <div className="text-white text-justify max-w-6xl mx-auto md:p-5 p-1 bg-black/30">
             <p className="md:text-xl mb-4 text-sm">
               Ulukışla Belediyesi öncülüğünde hayata geçirilen Ulukışla Anadolu
               Yapı Kooperatifi, şehrin geleceğine yön veren en önemli

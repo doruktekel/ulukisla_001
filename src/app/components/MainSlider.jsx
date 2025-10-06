@@ -53,7 +53,7 @@ const MainSlider = () => {
   const CurrentSlideComponent = slides[currentSlide].item;
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-screen overflow-hidden bg-black">
       {/* All Slides */}
       <div className="w-full h-full relative">
         {slides.map((slide, index) => {

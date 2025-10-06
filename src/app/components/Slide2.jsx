@@ -59,13 +59,13 @@ const Slide2 = ({ isActive }) => {
                 Sayın {decodedToken.name};
               </h1>
             )}
-            <p className="md:text-xl text-sm mb-2 content1 bg-black/30 p-5 ">
+            <p className="md:text-xl text-sm mb-2 content1 bg-black/30 md:p-5 p-1 ">
               Sizleri, Niğde Ulukışla’da hayata geçireceğimiz Ulukışla Anadolu
               Yapı Kooperatifi’ne üye olmaya davet ediyoruz. Kooperatifimiz, GIA
               Özel Endüstri Bölgesi’nin hemen yanında, modern yaşam ve konforun
               buluştuğu bir alan üzerinde kurulacaktır.
             </p>
-            <p className="md:text-xl text-sm content2 bg-black/30 p-5 ">
+            <p className="md:text-xl text-sm content2 bg-black/30 md:p-5 p-1 ">
               Projemiz yaklaşık 10.000 konut ile planlanmış olup; güvenli, lüks
               ve konforlu dairelerin yanı sıra kendi içerisinde sosyal tesisler,
               özel alanlar ve çeşitli yaşam kolaylıkları sunacaktır. Bu eşsiz
