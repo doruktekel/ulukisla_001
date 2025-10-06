@@ -23,7 +23,14 @@ const Slide1 = () => {
   return (
     <div className="w-full h-screen relative overflow-hidden">
       {/* Video */}
-      <video className="w-full h-full object-cover" autoPlay muted playsInline>
+      <video
+        className="w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      >
         <source src="/1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

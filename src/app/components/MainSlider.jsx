@@ -122,7 +122,7 @@ const MainSlider = () => {
 
       {/* Whatsapp Button */}
 
-      <div className="absolute bottom-20 right-5 md:bottom-12 md:right-12">
+      <div className="absolute bottom-24 right-4 md:bottom-12 md:right-12">
         <WhatsappRefButton />
       </div>
     </div>
