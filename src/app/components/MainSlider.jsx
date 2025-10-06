@@ -156,20 +156,20 @@ const MainSlider = () => {
       </div>
 
       {/* Sirket Logosu */}
-      <div className="absolute md:block hidden md:bottom-12 md:top-auto md:left-9">
+      <div className="absolute md:block hidden md:bottom-12 md:top-auto md:left-7">
         {currentSlide !== 0 && (
           <Image
-            src="/logo_b.webp"
+            src="/logo_untext.webp"
             alt="Logo"
             width={120}
             height={120}
-            className="mx-auto mb-4"
+            className="mx-auto"
           />
         )}
       </div>
 
       {/* Whatsapp Button */}
-      <div className="absolute bottom-24 right-4 md:bottom-12 md:right-12">
+      <div className="absolute bottom-24 right-4 md:bottom-14 md:right-12">
         <WhatsappRefButton />
       </div>
     </div>
