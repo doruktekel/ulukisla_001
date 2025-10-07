@@ -40,7 +40,7 @@ const Slide3_1 = ({ isActive }) => {
       <Image
         src="/3+1.webp"
         alt="Logo"
-        width={1800}
+        width={1480}
         height={2000}
         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:block"
       />
