@@ -301,7 +301,6 @@
 // };
 
 // export default ContactForm;
-
 "use client";
 import { useState } from "react";
 import KvkkModal from "./KvkkModal";
@@ -429,17 +428,17 @@ const ContactForm = () => {
     }
   };
 
-  // Touch event'lerini durdurmak için
-  const handleTouchStart = (e) => {
+  // Touch event'lerini durdurmak için - TÜM eventleri yakala
+  const stopPropagation = (e) => {
     e.stopPropagation();
   };
 
   return (
     <div
       className="w-full max-w-md p-2 md:p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-xl"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchStart}
-      onTouchEnd={handleTouchStart}
+      onTouchStart={stopPropagation}
+      onTouchMove={stopPropagation}
+      onTouchEnd={stopPropagation}
     >
       <h2 className="md:text-3xl text-xl font-bold text-white mb-6 text-center">
         İletişim Formu
@@ -452,6 +451,9 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            onTouchStart={stopPropagation}
+            onTouchMove={stopPropagation}
+            onTouchEnd={stopPropagation}
             placeholder="Adınız"
             className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.name ? "border-red-500" : "border-transparent"
@@ -468,6 +470,9 @@ const ContactForm = () => {
             name="surname"
             value={formData.surname}
             onChange={handleChange}
+            onTouchStart={stopPropagation}
+            onTouchMove={stopPropagation}
+            onTouchEnd={stopPropagation}
             placeholder="Soyadınız"
             className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.surname ? "border-red-500" : "border-transparent"
@@ -484,6 +489,9 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
+            onTouchStart={stopPropagation}
+            onTouchMove={stopPropagation}
+            onTouchEnd={stopPropagation}
             placeholder="Telefon Numaranız"
             className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.phone ? "border-red-500" : "border-transparent"
@@ -500,6 +508,9 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            onTouchStart={stopPropagation}
+            onTouchMove={stopPropagation}
+            onTouchEnd={stopPropagation}
             placeholder="E-posta Adresiniz"
             className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.email ? "border-red-500" : "border-transparent"
@@ -515,6 +526,9 @@ const ContactForm = () => {
             name="apartmentType"
             value={formData.apartmentType}
             onChange={handleChange}
+            onTouchStart={stopPropagation}
+            onTouchMove={stopPropagation}
+            onTouchEnd={stopPropagation}
             className={`w-full md:p-3 p-1 rounded-lg bg-white/20 border ${
               errors.apartmentType ? "border-red-500" : "border-transparent"
             } text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50`}
@@ -555,6 +569,9 @@ const ContactForm = () => {
             name="acceptKvkk"
             checked={formData.acceptKvkk}
             onChange={handleChange}
+            onTouchStart={stopPropagation}
+            onTouchMove={stopPropagation}
+            onTouchEnd={stopPropagation}
             className="mt-1"
             id="acceptKvkk"
           />
@@ -565,6 +582,7 @@ const ContactForm = () => {
               e.preventDefault();
               setIsKvkkModalOpen(true);
             }}
+            onTouchStart={stopPropagation}
           >
             KVKK metnini okudum ve kabul ediyorum.
           </label>
@@ -586,6 +604,9 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
+          onTouchStart={stopPropagation}
+          onTouchMove={stopPropagation}
+          onTouchEnd={stopPropagation}
           className={`w-full md:p-3 p-2 rounded-lg cursor-pointer hover:bg-gray-300 bg-white text-black font-semibold transition-all duration-300 ease-in-out
             ${
               isSubmitting
