@@ -32,7 +32,7 @@ const ContactForm = () => {
       newErrors.phone = "Telefon alanı zorunludur";
     } else if (!/^[0-9]{10}$/.test(formData.phone.trim())) {
       newErrors.phone =
-        "Telefon numarasi 10 haneli olmalıdır. Örnek: 0555 555 55 55";
+        "Telefon numarasi 10 haneli olmalıdır. Örnek: 555 555 55 55";
     }
 
     if (!formData.email.trim()) {

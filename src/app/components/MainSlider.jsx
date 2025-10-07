@@ -20,25 +20,27 @@ import Slide1_1 from "./Slide1_1";
 import Slide2_1 from "./Slide2_1";
 import Slide3_1 from "./Slide3_1";
 import Slide4_1 from "./Slide4_1";
+import SlideVideo from "./SlideVideo";
 
 const MainSlider = () => {
   const slides = [
     { id: 1, item: Slide1 },
     { id: 2, item: Slide2 },
-    { id: 3, item: Slide3 },
-    { id: 4, item: Slide4 },
-    { id: 5, item: Slide5 },
-    { id: 6, item: Slide6 },
-    { id: 7, item: Slide7 },
-    { id: 8, item: Slide8 },
-    { id: 9, item: Slide9 },
-    { id: 10, item: Slide1_1 },
-    { id: 11, item: Slide2_1 },
-    { id: 12, item: Slide3_1 },
-    { id: 13, item: Slide4_1 },
-    { id: 14, item: FormSlider },
-    { id: 15, item: Slide12 },
-    { id: 16, item: Slide13 },
+    { id: 3, item: SlideVideo },
+    { id: 4, item: Slide3 },
+    { id: 5, item: Slide4 },
+    { id: 6, item: Slide5 },
+    { id: 7, item: Slide6 },
+    { id: 8, item: Slide7 },
+    { id: 9, item: Slide8 },
+    { id: 10, item: Slide9 },
+    { id: 11, item: Slide1_1 },
+    { id: 12, item: Slide2_1 },
+    { id: 13, item: Slide3_1 },
+    { id: 14, item: Slide4_1 },
+    { id: 15, item: FormSlider },
+    { id: 16, item: Slide12 },
+    { id: 17, item: Slide13 },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
