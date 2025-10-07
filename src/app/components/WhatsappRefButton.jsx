@@ -118,7 +118,7 @@ const WhatsappRefButton = () => {
                       : "bg-green-500 hover:bg-green-600 cursor-pointer"
                   } text-white transition-colors`}
                 >
-                  {loading ? "Gönderiliyor..." : "Whatsapp'a Geç"}
+                  {loading ? "Gönderiliyor..." : "Gönder"}
                 </button>
               </div>
             </div>
