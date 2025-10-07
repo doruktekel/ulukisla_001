@@ -118,7 +118,7 @@ Kişisel verileriniz, tamamen kendi iradenizle ve açık rızanızla tarafımız
 
     const mailData = {
       from: `"Hisse Talebi" <${process.env.SMTP_USER}>`,
-      to: "talep@kaledranresort.com", // PHP'deki gibi
+      to: "talep@ulukislayapikoop.com", // PHP'deki gibi
       replyTo: `"${name} ${surname}" <${email}>`,
       subject: `${name} ${surname} - Konut Pay Edinim Talebi`,
       html: `
