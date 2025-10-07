@@ -38,7 +38,8 @@ export async function POST(req) {
 
     const phoneRegex = /^[0-9]{10}$/;
     if (phone && !phoneRegex.test(phone)) {
-      errors.phone = "Geçerli bir telefon numarası giriniz";
+      errors.phone =
+        "Telefon numarasi 10 haneli olmalıdır. Örnek: 0555 555 55 55";
     }
 
     if (Object.keys(errors).length > 0) {
