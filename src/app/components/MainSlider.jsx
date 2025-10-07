@@ -12,11 +12,14 @@ import Slide8 from "./Slide8";
 import Slide9 from "./Slide9";
 import FormSlider from "./FormSlider";
 import WhatsappRefButton from "./WhatsappRefButton";
-import Slide11 from "./Slide11";
-import Slide10 from "./Slide10";
+
 import Image from "next/image";
 import Slide12 from "./Slide12";
 import Slide13 from "./Slide13";
+import Slide1_1 from "./Slide1_1";
+import Slide2_1 from "./Slide2_1";
+import Slide3_1 from "./Slide3_1";
+import Slide4_1 from "./Slide4_1";
 
 const MainSlider = () => {
   const slides = [
@@ -29,11 +32,13 @@ const MainSlider = () => {
     { id: 7, item: Slide7 },
     { id: 8, item: Slide8 },
     { id: 9, item: Slide9 },
-    { id: 10, item: Slide10 },
-    { id: 11, item: Slide11 },
-    { id: 12, item: FormSlider },
-    { id: 13, item: Slide12 },
-    { id: 14, item: Slide13 },
+    { id: 10, item: Slide1_1 },
+    { id: 11, item: Slide2_1 },
+    { id: 12, item: Slide3_1 },
+    { id: 13, item: Slide4_1 },
+    { id: 14, item: FormSlider },
+    { id: 15, item: Slide12 },
+    { id: 16, item: Slide13 },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -139,7 +144,7 @@ const MainSlider = () => {
       </button>
 
       {/* Pagination */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-wrap gap-2 bg-black/20 p-2 md:rounded-full w-80 md:w-fit justify-center rounded-xl">
+      <div className="absolute bottom-2 md:bottom-4 left-1/2 transform -translate-x-1/2 flex flex-wrap gap-2 bg-black/20 md:p-2 p-1 md:rounded-full w-80 md:w-fit justify-center rounded-xl">
         {slides.map((slide, index) => (
           <button
             key={index}
