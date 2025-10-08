@@ -24,7 +24,7 @@ const useWhatsappRef = () => {
       const data = await res.json();
 
       if (res.ok) {
-        const targetUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${data.token}`;
+        const targetUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/slide/${data.token}`;
         const messageWithUrl = `Sayın ${name}, merhabalar sizlere Ulukışla Anadolu Yapı Kooperatifi'nin fırsatlarla dolu portföyünü iletmekten mutluluk duyarım.\n\n\n${targetUrl}`;
 
         // Mobil cihaz kontrolü
