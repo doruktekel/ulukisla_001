@@ -11,6 +11,25 @@ const Slide12 = ({ isActive }) => {
     if (!isActive) return;
     const tl = gsap.timeline({ delay: 0.5 });
 
+    let splitLastContent = SplitText.create(".lastContent", {
+      type: "words,lines",
+    });
+
+    gsap.fromTo(
+      splitLastContent.lines,
+      {
+        scale: 0,
+        autoAlpha: 0,
+      },
+      {
+        scale: 1,
+        autoAlpha: 1,
+        duration: 1,
+        ease: "power4.out",
+        delay: 0.5,
+      }
+    );
+
     let split1 = SplitText.create(".content1", { type: "words, lines" });
     let split2 = SplitText.create(".content2", {
       type: "words , lines ",
@@ -41,17 +60,24 @@ const Slide12 = ({ isActive }) => {
         className="w-full h-full bg-cover bg-center bg-no-repeat "
         style={{ backgroundImage: "url('/13.webp')" }}
       >
+        <div className="absolute inset-0 flex bottom-[30%] items-center  justify-center">
+          <div className="text-white md:bg-black/50 bg-black/30  p-2 md:p-5 ">
+            <h1 className="md:text-3xl mb-2 font-bold lastContent">
+              TEŞEKKÜRLER
+            </h1>
+          </div>
+        </div>
         <div className="absolute inset-0 bottom-32 md:bottom-16 flex items-end justify-center">
           <div className="text-white text-center md:bg-black/50 bg-black/30 w-4/5 mx-auto mt-10 p-1 md:p-5 ">
             <h1 className="md:text-2xl text-lg mb-2 font-bold content1">
               ULUKIŞLA ANADOLU YAPI KOOPERATİFİ
             </h1>
             <p className="md:text-lg text-sm content2">
-              ADRES : CEPA OFİS KULE Mustafa Kemal Mahallesi Eskişehir Yolu 7.
-              km 2123 Sokak No:2/D, Kat 11, No:1103 ÇANKAYA / ANKARA
+              ADRES : Ulukışla Belediyesi - Alpağut, İsmet İnönü Cd. Pk:51900,
+              51900 Ulukışla/Niğde, Türkiye
             </p>
             <p className="md:text-lg text-sm content2">
-              İLETİŞİM: T: +90 312 473 56 50 M: info@belenandpartners.com
+              İLETİŞİM: T: +90 388 511 21 52 M: info@ulukislayapikoop.com
             </p>
           </div>
         </div>

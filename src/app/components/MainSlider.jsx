@@ -15,7 +15,6 @@ import WhatsappRefButton from "./WhatsappRefButton";
 
 import Image from "next/image";
 import Slide12 from "./Slide12";
-import Slide13 from "./Slide13";
 import Slide1_1 from "./Slide1_1";
 import Slide2_1 from "./Slide2_1";
 import Slide3_1 from "./Slide3_1";
@@ -40,7 +39,6 @@ const MainSlider = () => {
     { id: 14, item: Slide4_1 },
     { id: 15, item: FormSlider },
     { id: 16, item: Slide12 },
-    { id: 17, item: Slide13 },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
