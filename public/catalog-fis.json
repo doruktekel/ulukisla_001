@@ -1,7 +1,5 @@
 {
   "pages": [
-    "/catalog/alt3.png",
-    "/catalog/front.png",
     "/catalog/1 (2).png",
     "/catalog/1 (3).png",
     "/catalog/1 (4).png",
@@ -63,7 +61,6 @@
     "/catalog/1 (60).png",
     "/catalog/1 (61).png",
     "/catalog/1 (62).png",
-    "/catalog/1 (63).png",
-    "/catalog/back.png"
+    "/catalog/1 (63).png"
   ]
 }
