@@ -114,19 +114,11 @@ const FlipBook = ({ pages = [] }) => {
 
   return (
     <>
-      <div
-        style={{
-          width: "100vw",
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start", // üstten hizala
-          overflow: "hidden",
-        }}
-      >
+      <div>
         <div
           ref={wrapperRef}
           onClick={handleClick}
+          className=" shadow-black shadow-2xl"
           style={{
             width: wrapperWidth,
             height: pageHeight,
