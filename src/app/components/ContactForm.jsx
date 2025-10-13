@@ -347,8 +347,7 @@ const ContactForm = () => {
     email: "",
     apartmentType: "",
     acceptKvkk: false,
-    website: "", // Honeypot 1
-    companyName: "", // Honeypot 2
+    website: "",
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -424,7 +423,6 @@ const ContactForm = () => {
           apartmentType: "",
           acceptKvkk: false,
           website: "",
-          companyName: "",
         });
       } else {
         if (response.status === 400 && data.errors) {
@@ -507,15 +505,6 @@ const ContactForm = () => {
           tabIndex="-1"
           autoComplete="off"
           aria-hidden="true"
-        />
-        <input
-          type="text"
-          name="companyName"
-          value={formData.companyName}
-          onChange={handleChange}
-          style={{ display: "none" }}
-          tabIndex="-1"
-          autoComplete="off"
         />
 
         <div>

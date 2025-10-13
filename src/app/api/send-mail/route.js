@@ -240,14 +240,10 @@ const formatName = (str) => {
 };
 
 // Honeypot kontrolü
-const isBot = (website, companyName) => {
+const isBot = (website) => {
   // Honeypot alanlardan biri doldurulmuşsa bot demektir
   if (website && website.trim() !== "") {
     console.log("🤖 BOT TESPİTİ: 'website' alanı doldurulmuş");
-    return true;
-  }
-  if (companyName && companyName.trim() !== "") {
-    console.log("🤖 BOT TESPİTİ: 'companyName' alanı doldurulmuş");
     return true;
   }
   return false;
@@ -264,11 +260,10 @@ export async function POST(req) {
       acceptKvkk,
       referans,
       website,
-      companyName,
     } = await req.json();
 
     // Honeypot kontrolü - Bot ise fake başarı dönür
-    if (isBot(website, companyName)) {
+    if (isBot(website)) {
       console.log("⚠️  BOT TESPİT EDİLDİ - FAKE 200 YANITI GÖNDERİLİYOR");
       return NextResponse.json(
         { message: "Form başarıyla gönderildi" },
