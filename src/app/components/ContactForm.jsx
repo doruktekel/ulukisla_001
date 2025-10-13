@@ -469,6 +469,22 @@ const ContactForm = () => {
     e.stopPropagation();
   };
 
+  const inputStyle = {
+    position: "absolute",
+    width: "1px",
+    height: "1px",
+    padding: 0,
+    margin: "-1px",
+    overflow: "hidden",
+    clip: "rect(0,0,0,0)",
+    whiteSpace: "nowrap",
+    border: 0,
+    opacity: 0.001,
+    pointerEvents: "none",
+    zIndex: -1000,
+    left: "-9999px",
+  };
+
   return (
     <div
       className="w-full max-w-md p-2 md:p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-xl"
@@ -487,9 +503,10 @@ const ContactForm = () => {
           name="website"
           value={formData.website}
           onChange={handleChange}
-          style={{ display: "none" }}
+          style={inputStyle}
           tabIndex="-1"
           autoComplete="off"
+          aria-hidden="true"
         />
         <input
           type="text"
